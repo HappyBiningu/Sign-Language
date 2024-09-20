@@ -1,0 +1,289 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/fav.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>|&nbsp; SLR - Deep Sign Language Recognition</title>
+
+    <script defer src="{% static 'js/script.js' %}"></script>
+  </head>
+  <body>
+    <header class="header">
+      {% include "navbar.html" %}
+
+      <div class="header__title">
+        <h1>
+          Embrace </br>
+          <!-- Green highlight effect -->
+          <span class="highlight">Sign Language</span> 
+          to </br> Connect
+          <span class="">Silent World</span>
+        </h1>
+        <h4>Bridging the gap through the power of signs.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="{% static 'img/test/hero-1.png' %}"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Comprehensive Tools for Effective Sign Communication and Beyond.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="{% static 'images/features/model.png' %}"
+          data-src="{% static 'images/features/model.png' %}"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="{% static 'img/icons.svg#icon-monitor' %}"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Model Variety</h5>
+          <p>
+            Choose from Diverse Models, Each Trained with the Best of Words:
+            100, 300, 1000, or 2000, to Enhance Your Signing Experience.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use
+                xlink:href="{% static 'img/icons.svg#icon-trending-up' %}"
+              ></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Real-time Sign Language Translation</h5>
+          <p>
+            Translate sign language instantly using your camera. Communicate
+            seamlessly with the sign language community.
+          </p>
+        </div>
+        <img
+          src="{% static 'images/features/realtime.png' %}"
+          data-src="{% static 'images/features/realtime.png' %}"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="{% static 'images/features/larn.png' %}"
+          data-src="{% static 'images/features/learn.png' %}"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use
+                xlink:href="{% static 'img/icons.svg#icon-credit-card' %}"
+              ></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Learn Sign Language Easily</h5>
+          <p>
+            Now, on our website, you can learn sign language by simply typing a
+            word and hitting "Enter." It will instantly display a video
+            demonstrating the corresponding sign.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">OPERATIONS</h2>
+        <h3 class="section__header">
+          Keeping It Clear and Simple, Yet Profound.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Open Camera
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Video Data Transfer
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Translation & Feedback
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="{% static 'img/icons.svg#icon-upload' %}"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Step 1: Open Camera</h5>
+          <p>
+            <span class="typing"></span>
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="{% static 'img/icons.svg#icon-home' %}"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Step 2: Video Data Transfer</h5>
+          <p>
+            <span class="typing1"></span>
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="{% static 'img/icons.svg#icon-user-x' %}"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Step 3: Translation & Feedback</h5>
+          <p>
+            <span class="typing2"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+   
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best time to embrace Sign Language is now. Start your journey
+          today! Scan QR  Code below
+        </h3>
+      </div>
+ 
+      <div class="col-sm-12 col-xl-2">
+        <div class="bg-secondary text-center rounded p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+            </div>
+            <!-- QR Code here -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.youtube.com/embed/Z_mSFxD-RIk/" alt="QR CODE">
+        </div>
+    </div>
+    </section>
+
+    {% include "footer.html" %}
+
+
+
+    
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"
+          integrity="sha512-ioFpA4cD4gmoOhHglW4f6gep7w+YL7UMKtXx4ebJ5NN4SscmnZYYmSjkA+DaHGvBI4wpYVPx2C7DmmV9TgbIbQ==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+  </script>
+  
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Begin by opening your camera to capture your sign language gestures. Our system will continuously analyze the video feed to recognize your signs and facilitate smooth communication."],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 60
+    });
+
+    var typed = new Typed('.typing1',{
+        strings: ["Your camera feed is seamlessly transferred to our server, frame by frame, ensuring every subtle gesture is captured accurately. This real-time data exchange is the first step in our sign language translation process."],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 40
+      });
+
+      var typed = new Typed('.typing2',{
+        strings: ["Our server processes every 40 frames, uses a pre-trained model to recognize sign language with a confidence level above 0.5, and sends the corresponding English text as feedback."],
+        loop: true,
+        typeSpeed: 95,
+        backSpeed: 40
+      });
+
+      var typed = new Typed('.typing3',{
+        strings: ["Thank you"],
+        loop: true,
+        typeSpeed: 90,
+        backSpeed: 40
+      });
+
+      var typed = new Typed('.typing4',{
+        strings: ["Welcome"],
+        loop: true,
+        typeSpeed: 80,
+        backSpeed: 40
+      });
+
+      var typed = new Typed('.typing5',{
+        strings: ["Yes"],
+        loop: true,
+        typeSpeed: 80,
+        backSpeed: 40
+      });
+
+      var typed = new Typed('.typing6',{
+        strings: ["No"],
+        loop: true,
+        typeSpeed: 80,
+        backSpeed: 40
+      });
+
+      var typed = new Typed('.typing7',{
+        strings:["Munyaradzi Mashukushe R233730A", 
+        "Panashe Dondo R233680P",
+        "Richard Chinyani R235368X",
+        "Blessing Nyoni	R232430Q",
+        "Nigel V. Chafausipo R2214030V",
+           "Munyaradzi Mashukushe R233730A | Panashe Dondo R233680P | Richard Chinyani R235368X | Blessing Nyoni R232430Q | Nigel V. Chafausipo R2214030V "],
+        loop: true,
+        typeSpeed: 25,
+        backSpeed: 35
+      });
+
+      var typed = new Typed('.typing8',{
+        strings: ["Tinotenda Biningu"],
+        loop: true,
+        typeSpeed: 80,
+        backSpeed: 40
+      });
+
+  </script>
+  
+  </body>
+</html>
